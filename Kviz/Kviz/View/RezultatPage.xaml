@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kviz.View.RezultatPage"
+             BackgroundImageSource="bg.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Margin="0,0,0,0" Source="logo.png"/>
+            <StackLayout WidthRequest="200" HeightRequest="130" Padding="50,0,50,0" Margin="0,0,0,150" x:Name="StackRezultat" Spacing="40" VerticalOptions="EndAndExpand">
+                <Button Text="Ponovi" BackgroundColor="MidnightBlue" HeightRequest="70" TextColor="White" CornerRadius="20" FontSize="20" Clicked="Button_Clicked" IsEnabled="True"/>
+                <Label x:Name="NaslovLabel" Text="Čestitamo! Osvojili ste:" FontSize="20" TextColor="White" HorizontalOptions="Center" />
+                <Button Text="0" BackgroundColor="MidnightBlue" TextColor="White" x:Name="ButtonOsvojeno" CornerRadius="20"  FontSize="25" />
+                
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kviz.ViewModel.Glavna"
+             Title="Milijunaš"
+             BackgroundImageSource="bg.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="logo.png" />
+            <StackLayout Orientation="Vertical" WidthRequest="200" HorizontalOptions="Center" Spacing="40" VerticalOptions="EndAndExpand" Margin="0,0,0,60">
+                <Button Text="Počni kviz" HeightRequest="60" CornerRadius="20" BackgroundColor="MidnightBlue" TextColor="White" FontSize="20" FontAttributes="Bold" FontFamily="sans" Clicked="Button_Clicked" />
+            </StackLayout>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

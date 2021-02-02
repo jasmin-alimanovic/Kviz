@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             x:Class="Kviz.PopUpPoziv" HeightRequest="270" WidthRequest="170">
+    <StackLayout BackgroundColor="MidnightBlue">
+
+        <Button Text="Pozovi prijatelja" HorizontalOptions="Center" Margin="0,40,0,0" FontSize="Large" Clicked="Button_Clicked_1" BorderColor="Black" CornerRadius="40" BackgroundColor="DarkBlue" HeightRequest="80" TextColor="White"/>
+        <Label x:Name="lblPozivTekst" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" TextColor="White" FontSize="18"
+                BackgroundColor="MidnightBlue"/>
+        <Button Text="OK" HorizontalOptions="Center" Margin="0,0,0,50" Clicked="Button_Clicked" BorderColor="DarkBlue" FontSize="Large" BackgroundColor="DarkBlue" HeightRequest="80" TextColor="White" CornerRadius="40"/>
+    </StackLayout>
+</pages:PopupPage>

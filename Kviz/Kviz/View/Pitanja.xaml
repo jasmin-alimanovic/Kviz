@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kviz.Pitanja"
+             BackgroundImageSource="bg.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout x:Name="dzokeri" VerticalOptions="Center" Margin="0,20,0,5" Spacing="40" Orientation="Horizontal" HorizontalOptions="Center">
+                <!-- pomoc publike -->
+                <Image Source="publika.png" HeightRequest="50" WidthRequest="50" x:Name="PublikaSlika">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="PublikaTap"
+                Tapped="PublikaTap_Tapped"
+                NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <!--slika pola pola-->
+                <Image Source="polapola.png" HeightRequest="50" WidthRequest="50" x:Name="PolaPolaSlika">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="PolaPolaTap"
+                Tapped="PolaPolaTap_Tapped"
+                NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <!-- pozovi prijatelja-->
+                <Image Source="phone.png" HeightRequest="50" WidthRequest="50" x:Name="PhoneSlika">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="PhoneTap"
+                Tapped="PhoneTap_Tapped"
+                NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <!--Naslov-->
+            <Image Margin="0,0,0,0" Source="logo.png" />
+            <StackLayout WidthRequest="200" HeightRequest="130" Padding="20,0,20,0" x:Name="StackRezultat">
+                <Label x:Name="NaslovLabel" Text="Osvojeno" FontSize="30" TextColor="White" HorizontalOptions="Center" />
+                <Button Text="adada" x:Name="ButtonOsvojeno" CornerRadius="20" IsEnabled="False" />
+            </StackLayout>
+            
+            
+            <StackLayout x:Name="PitanjeBlok" Margin="0,0,0,15">
+                
+            <!--Tekst pitanja-->
+                <Label Text="Najveći kontinent na svijetu?"
+                    TextColor="White"
+                    x:Name="TekstPitanja"
+                    VerticalOptions="Center"
+                       FontSize="22"
+                    HorizontalOptions="Center" />
+            
+                <!--Odogovori-->
+                <StackLayout Spacing="20" Margin="0,40,0,0">
+
+                    <!--Prvi red-->
+                    <StackLayout Orientation="Horizontal" Spacing="50" HorizontalOptions="Center">
+                        <Button x:Name="Odg1" Text="Azija" WidthRequest="150" CornerRadius="20" Clicked="Odg1_Clicked"/>
+                        <Button x:Name="Odg2" Text="Europa" WidthRequest="150" CornerRadius="20" Clicked="Odg2_Clicked"/>
+                    </StackLayout>
+
+                    <!--Drugi red-->
+                    <StackLayout Orientation="Horizontal" Spacing="50" HorizontalOptions="Center">
+                        <Button x:Name="Odg3" Text="Afrika" WidthRequest="150" CornerRadius="20" Clicked="Odg3_Clicked"/>
+                        <Button x:Name="Odg4" Text="Sjeverna Amerika" WidthRequest="150" CornerRadius="20" Clicked="Odg4_Clicked"/>
+                    </StackLayout> 
+
+                </StackLayout>
+
+                
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
